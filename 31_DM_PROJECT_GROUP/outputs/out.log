@@ -1,0 +1,221 @@
+2020-12-22 00:55:26.512627: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+Splitting data into test/ train datasets
+Reshaping Data
+X_train Shape:  (3604, 224, 224, 3)
+X_test Shape:  (902, 224, 224, 3)
+Normalizing Data
+tcmalloc: large alloc 2170011648 bytes == 0x57296000 @  0x7fc1bed371e7 0x7fc1972b341e 0x7fc197303bdb 0x7fc197303cf7 0x7fc19739c967 0x50a4a5 0x50beb4 0x5095c8 0x50a2fd 0x50beb4 0x507be4 0x50ad03 0x634e72 0x634f27 0x6386df 0x639281 0x4b0dc0 0x7fc1be934bf7 0x5b259a
+y_train Shape:  (3604, 5)
+y_test Shape:  (902, 5)
+Number of classes:  5
+Training Model
+2020-12-22 00:55:34.751212: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-22 00:55:34.768129: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2020-12-22 00:55:34.832769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:34.833347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-12-22 00:55:34.833395: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2020-12-22 00:55:35.062476: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2020-12-22 00:55:35.062590: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2020-12-22 00:55:35.184235: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2020-12-22 00:55:35.220487: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2020-12-22 00:55:35.474937: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2020-12-22 00:55:35.523184: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2020-12-22 00:55:35.990924: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2020-12-22 00:55:35.991125: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:35.991815: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:36.016196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2020-12-22 00:55:36.016644: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2020-12-22 00:55:36.016819: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:36.017346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:00:04.0 name: Tesla T4 computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 40 deviceMemorySize: 14.73GiB deviceMemoryBandwidth: 298.08GiB/s
+2020-12-22 00:55:36.017389: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2020-12-22 00:55:36.017441: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2020-12-22 00:55:36.017464: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2020-12-22 00:55:36.017487: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2020-12-22 00:55:36.017508: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2020-12-22 00:55:36.017528: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2020-12-22 00:55:36.017549: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2020-12-22 00:55:36.017570: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2020-12-22 00:55:36.017637: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:36.018221: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:36.018706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2020-12-22 00:55:36.020922: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2020-12-22 00:55:40.032625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-22 00:55:40.032684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2020-12-22 00:55:40.032702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2020-12-22 00:55:40.036166: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:40.036855: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:40.037446: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-22 00:55:40.037988: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2020-12-22 00:55:40.038075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 13960 MB memory) -> physical GPU (device: 0, name: Tesla T4, pci bus id: 0000:00:04.0, compute capability: 7.5)
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/vgg16/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+58892288/58889256 [==============================] - 1s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/vgg16/vgg16_weights_tf_dim_ordering_tf_kernels.h5
+553467904/553467096 [==============================] - 3s 0us/step
+Model: "DR-Model-Based-VGG16"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input (InputLayer)           [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+block1_conv1 (Conv2D)        (None, 224, 224, 64)      1792      
+_________________________________________________________________
+block1_conv2 (Conv2D)        (None, 224, 224, 64)      36928     
+_________________________________________________________________
+block1_pool (MaxPooling2D)   (None, 112, 112, 64)      0         
+_________________________________________________________________
+block2_conv1 (Conv2D)        (None, 112, 112, 128)     73856     
+_________________________________________________________________
+block2_conv2 (Conv2D)        (None, 112, 112, 128)     147584    
+_________________________________________________________________
+block2_pool (MaxPooling2D)   (None, 56, 56, 128)       0         
+_________________________________________________________________
+block3_conv1 (Conv2D)        (None, 56, 56, 256)       295168    
+_________________________________________________________________
+block3_conv2 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_conv3 (Conv2D)        (None, 56, 56, 256)       590080    
+_________________________________________________________________
+block3_pool (MaxPooling2D)   (None, 28, 28, 256)       0         
+_________________________________________________________________
+block4_conv1 (Conv2D)        (None, 28, 28, 512)       1180160   
+_________________________________________________________________
+block4_conv2 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_conv3 (Conv2D)        (None, 28, 28, 512)       2359808   
+_________________________________________________________________
+block4_pool (MaxPooling2D)   (None, 14, 14, 512)       0         
+_________________________________________________________________
+block5_conv1 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv2 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_conv3 (Conv2D)        (None, 14, 14, 512)       2359808   
+_________________________________________________________________
+block5_pool (MaxPooling2D)   (None, 7, 7, 512)         0         
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 7, 7, 512)         2048      
+_________________________________________________________________
+flatten (Flatten)            (None, 25088)             0         
+_________________________________________________________________
+fc1 (Dense)                  (None, 4096)              102764544 
+_________________________________________________________________
+fc2 (Dense)                  (None, 4096)              16781312  
+_________________________________________________________________
+output (Dense)               (None, 5)                 20485     
+=================================================================
+Total params: 134,283,077
+Trainable params: 119,567,365
+Non-trainable params: 14,715,712
+_________________________________________________________________
+2020-12-22 00:55:45.136758: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-22 00:55:45.136802: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2020-12-22 00:55:45.138113: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1365] Profiler found 1 GPUs
+2020-12-22 00:55:45.173686: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcupti.so.10.1
+2020-12-22 00:55:45.327636: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-22 00:55:45.327812: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1487] CUPTI activity buffer flushed
+2020-12-22 00:55:45.450589: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2020-12-22 00:55:45.461473: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2200000000 Hz
+Epoch 1/25
+2020-12-22 00:55:46.209899: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2020-12-22 00:55:48.126634: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+ 1/12 [=>............................] - ETA: 2:38 - loss: 1.6635 - accuracy: 0.10552020-12-22 00:55:59.971231: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2020-12-22 00:55:59.971282: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+ 2/12 [====>.........................] - ETA: 10s - loss: 14.4912 - accuracy: 0.15042020-12-22 00:56:00.980448: I tensorflow/core/profiler/lib/profiler_session.cc:71] Profiler session collecting data.
+2020-12-22 00:56:00.980980: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1487] CUPTI activity buffer flushed
+2020-12-22 00:56:00.982221: I tensorflow/core/profiler/internal/gpu/cupti_collector.cc:228]  GpuTracer has collected 205 callback api events and 193 activity events. 
+2020-12-22 00:56:00.986066: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2020-12-22 00:56:01.008276: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00
+2020-12-22 00:56:01.015270: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for trace.json.gz to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.trace.json.gz
+2020-12-22 00:56:01.026308: I tensorflow/core/profiler/rpc/client/save_profile.cc:137] Creating directory: /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00
+2020-12-22 00:56:01.030788: I tensorflow/core/profiler/rpc/client/save_profile.cc:143] Dumped gzipped tool data for memory_profile.json.gz to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.memory_profile.json.gz
+2020-12-22 00:56:01.094535: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00Dumped tool data for xplane.pb to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.xplane.pb
+Dumped tool data for overview_page.pb to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.overview_page.pb
+Dumped tool data for input_pipeline.pb to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to /content/drive/MyDrive/eye_dr_cnn/src/Graph/train/plugins/profile/2020_12_22_00_56_00/c0f815d8729d.kernel_stats.pb
+
+12/12 [==============================] - 14s 1s/step - loss: 1.6069 - accuracy: 0.3422 - val_loss: 9.5746 - val_accuracy: 0.1082
+Epoch 3/25
+12/12 [==============================] - 15s 1s/step - loss: 1.4237 - accuracy: 0.4770 - val_loss: 4.6404 - val_accuracy: 0.1026
+Epoch 4/25
+12/12 [==============================] - 15s 1s/step - loss: 1.3245 - accuracy: 0.3846 - val_loss: 2.6187 - val_accuracy: 0.2399
+Epoch 5/25
+12/12 [==============================] - 15s 1s/step - loss: 1.0900 - accuracy: 0.5754 - val_loss: 1.9053 - val_accuracy: 0.2025
+Epoch 6/25
+12/12 [==============================] - 16s 1s/step - loss: 0.9296 - accuracy: 0.5971 - val_loss: 1.6542 - val_accuracy: 0.2524
+Epoch 7/25
+12/12 [==============================] - 16s 1s/step - loss: 0.7413 - accuracy: 0.6892 - val_loss: 1.4499 - val_accuracy: 0.3162
+Epoch 8/25
+12/12 [==============================] - 16s 1s/step - loss: 0.5175 - accuracy: 0.7631 - val_loss: 1.3545 - val_accuracy: 0.3759
+Epoch 9/25
+12/12 [==============================] - 17s 1s/step - loss: 0.4739 - accuracy: 0.7660 - val_loss: 1.4604 - val_accuracy: 0.2774
+Epoch 10/25
+12/12 [==============================] - 17s 1s/step - loss: 0.3608 - accuracy: 0.8186 - val_loss: 1.4221 - val_accuracy: 0.3259
+Epoch 11/25
+12/12 [==============================] - 17s 1s/step - loss: 0.2976 - accuracy: 0.8415 - val_loss: 1.4188 - val_accuracy: 0.2885
+Epoch 12/25
+12/12 [==============================] - 17s 1s/step - loss: 0.2327 - accuracy: 0.8700 - val_loss: 1.2810 - val_accuracy: 0.3814
+Epoch 13/25
+12/12 [==============================] - 17s 1s/step - loss: 0.1784 - accuracy: 0.9049 - val_loss: 1.2018 - val_accuracy: 0.4896
+Epoch 14/25
+12/12 [==============================] - 17s 1s/step - loss: 0.1610 - accuracy: 0.9141 - val_loss: 1.2062 - val_accuracy: 0.4716
+Epoch 15/25
+12/12 [==============================] - 17s 1s/step - loss: 0.1328 - accuracy: 0.9430 - val_loss: 1.3662 - val_accuracy: 0.3800
+Epoch 16/25
+12/12 [==============================] - 17s 1s/step - loss: 0.2299 - accuracy: 0.8587 - val_loss: 1.1368 - val_accuracy: 0.6006
+Epoch 17/25
+12/12 [==============================] - 17s 1s/step - loss: 0.1171 - accuracy: 0.9280 - val_loss: 1.2996 - val_accuracy: 0.4494
+Epoch 18/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0736 - accuracy: 0.9671 - val_loss: 1.1688 - val_accuracy: 0.5548
+Epoch 19/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0474 - accuracy: 0.9782 - val_loss: 1.3161 - val_accuracy: 0.4854
+Epoch 20/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0503 - accuracy: 0.9710 - val_loss: 1.2467 - val_accuracy: 0.5645
+Epoch 21/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0318 - accuracy: 0.9901 - val_loss: 1.2431 - val_accuracy: 0.5714
+Epoch 22/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0280 - accuracy: 0.9888 - val_loss: 1.3247 - val_accuracy: 0.5354
+Epoch 23/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0250 - accuracy: 0.9873 - val_loss: 1.3602 - val_accuracy: 0.5465
+Epoch 24/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0220 - accuracy: 0.9954 - val_loss: 1.3462 - val_accuracy: 0.5714
+Epoch 25/25
+12/12 [==============================] - 17s 1s/step - loss: 0.0187 - accuracy: 0.9941 - val_loss: 1.4210 - val_accuracy: 0.5784
+Predicting
+Test score: 1.2556391954421997
+Test accuracy: 0.5920177102088928
+Confusion matrix: 
+[[360   5  91   0   3]
+ [ 45  18  57   1   0]
+ [ 69  14 146   4   2]
+ [ 11   2  26   6   0]
+ [  5   2  29   2   4]]
+              precision    recall  f1-score   support
+
+           0     0.7347    0.7843    0.7587       459
+           1     0.4390    0.1488    0.2222       121
+           2     0.4183    0.6213    0.5000       235
+           3     0.4615    0.1333    0.2069        45
+           4     0.4444    0.0952    0.1569        42
+
+    accuracy                         0.5920       902
+   macro avg     0.4996    0.3566    0.3689       902
+weighted avg     0.5855    0.5920    0.5638       902
+
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+<Figure size 640x480 with 1 Axes>
+trining plot: /content/drive/MyDrive/eye_dr_cnn/src/plots/training_history_1608598532.691587.png
+trining loss plot: /content/drive/MyDrive/eye_dr_cnn/src/plots/loss_history_1608598532.691587.png
+confusion matrix plot: /content/drive/MyDrive/eye_dr_cnn/src/plots/confusionmatrix_1608598532.691587.png
+auc plot: /content/drive/MyDrive/eye_dr_cnn/src/plots/auc_1608598532.691587.png
+2020-12-22 01:03:04.896055: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 01:03:07.179572: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+2020-12-22 01:03:07.441912: W tensorflow/core/framework/cpu_allocator_impl.cc:80] Allocation of 411041792 exceeds 10% of free system memory.
+Model saved: /content/drive/MyDrive/eye_dr_cnn/models/DR_5_Classes_1608598532.691587.h5
+Completed
